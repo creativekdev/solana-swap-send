@@ -1,0 +1,17 @@
+[package]
+name = "solana_swap_send"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-program = "1.10.38"
+spl-token = "3.2.0"
+spl-token-swap = "3.2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+no-entrypoint = []
